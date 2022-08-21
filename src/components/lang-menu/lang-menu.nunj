@@ -1,0 +1,24 @@
+{% from "../icon/icon.nunj" import icon %}
+
+{% macro langMenu(props) %}
+<div class="relative flex flex-col w-[72px] h-[40px] {% if props.classList %} {{ props.classList }}{% endif %}" data-dropdown>
+		<button class="flex items-center gap-x-[9px] min-h-[40px] pl-[15px] pr-[12px] border-solid border-2 border-grey-5 text-base rounded-[14px] bg-white" type="button" aria-label="Select language" data-dropdown-opener>
+			En
+			{{ icon({
+					iconName: "chevron",
+					attributes: "width=8 height=4 stroke=#303333 opacity=.3"
+			}) }}
+		</button>
+		<ul class="hidden top-full left-0 flex-col w-full bg-white box-border pb-[5px] border-2 border-solid border-grey-5 border-t-0 rounded-b-[14px] shadow-dropdown">
+			<li class="">
+				<a href="#en" class="">En</a>
+			</li>
+			<li class="">
+				<a href="#ru" class="">Ru</a>
+			</li>
+			<li class="">
+				<a href="#de" class="">De</a>
+			</li>
+		</ul>
+	</div>
+{% endmacro %}

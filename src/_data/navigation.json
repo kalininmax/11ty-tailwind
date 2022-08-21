@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "text": "Dashboard",
+      "url": "/",
+      "icon": "squares"
+    },
+    {
+      "text": "Proxies",
+      "url": "/proxies/",
+      "icon": "planet"
+    },
+    {
+      "text": "Invoice",
+      "url": "/invoice/",
+      "icon": "layers"
+    },
+    {
+      "text": "Referals",
+      "url": "/referals/",
+      "icon": "avatar"
+    },
+    {
+      "text": "Balance",
+      "url": "/balance/",
+      "icon": "stack"
+    },
+    {
+      "text": "Support",
+      "url": "/support/",
+      "icon": "question"
+    }
+  ]
+}

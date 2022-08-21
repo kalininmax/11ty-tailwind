@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .group[open] .group-open\:flex {
+    display: flex;
+  }
+}

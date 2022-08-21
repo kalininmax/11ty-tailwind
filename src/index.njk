@@ -1,0 +1,31 @@
+{# ---
+layout: base.njk
+title: Dashboard
+--- #}
+
+{% extends './_layouts/base.njk' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <div class="w-full px-[20px] max-w-[1540px] mx-auto">
+    <h1 class="mt-[28px] mb-[27px] ml-[32px] text-[28px] font-medium">Dashboard</h1>
+    <section class="p-[32px] pt-[26px] max-w-[850px] box-border rounded-[18px] border-solid border-2 border-purple-1 bg-white">
+      <h2 class="text-[23px] mb-[27px] text-grey-2">Account</h2>
+      <ul class="flex gap-x-[32px]">
+        <li class="flex flex-col justify-end p-[24px] pb-[22] box-border w-1/3 rounded-[18px] bg-purple-1">
+          <p class="text-[25px] font-medium">0</p>
+          <p class="text-base text-grey-1">Balance</p>
+        </li>
+        <li class="flex flex-col justify-end p-[24px] pb-[22] box-border w-1/3 rounded-[18px] bg-aqua-4">
+          <p class="text-[25px] font-medium">0</p>
+          <p class="text-base text-grey-1">Available payout</p>
+        </li>
+        <li class="flex flex-col justify-end p-[24px] pb-[22] box-border w-1/3 rounded-[18px] bg-yellow-3">
+          <p class="text-[25px] font-medium">0%</p>
+          <p class="text-base text-grey-1">Discount</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+{% endblock %}
